@@ -49,7 +49,7 @@ class ProductDetailVC: UIViewController {
         self.collectionVw.register(UINib(nibName: "ProductDetailsCVCell", bundle: nil), forCellWithReuseIdentifier: "ProductDetailsCVCell")
     }
     
-    //set layout of collection view
+    //set layout of Collection view
     private func configureCompositionalLayout() {
         let collection_layout = UICollectionViewCompositionalLayout {sectionIndex, environment in
             return Layouts.shared.productDetailLayout()
