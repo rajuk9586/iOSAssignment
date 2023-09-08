@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PlayListCVCell" id="gTV-IL-0wX" customClass="PlayListCVCell" customModule="iOS_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="263"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="263"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3h3-t2-Wny">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="263"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChocolateBar" translatesAutoresizingMaskIntoConstraints="NO" id="o3U-8j-jjY">
+                                <rect key="frame" x="0.0" y="0.0" width="195" height="263"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Candy" translatesAutoresizingMaskIntoConstraints="NO" id="y1G-7O-YgD">
+                                <rect key="frame" x="15.999999999999996" y="19.999999999999996" width="52.666666666666657" height="52.666666666666657"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="y1G-7O-YgD" secondAttribute="height" multiplier="1:1" id="6Wu-QA-qnT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yjh-EQ-w8J">
+                                <rect key="frame" x="16" y="197" width="163" height="50"/>
+                                <color key="backgroundColor" red="0.59215688710000003" green="0.8392156959" blue="0.30980393290000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="13s-q5-XqQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="y1G-7O-YgD" firstAttribute="top" secondItem="3h3-t2-Wny" secondAttribute="top" constant="20" id="76p-SM-JXo"/>
+                            <constraint firstItem="yjh-EQ-w8J" firstAttribute="leading" secondItem="3h3-t2-Wny" secondAttribute="leading" constant="16" id="AgW-2R-3xI"/>
+                            <constraint firstAttribute="trailing" secondItem="o3U-8j-jjY" secondAttribute="trailing" id="EKk-5y-RD9"/>
+                            <constraint firstAttribute="bottom" secondItem="o3U-8j-jjY" secondAttribute="bottom" id="K1K-qh-vQd"/>
+                            <constraint firstItem="y1G-7O-YgD" firstAttribute="width" secondItem="3h3-t2-Wny" secondAttribute="height" multiplier="0.2" id="Mli-Jc-fJ7"/>
+                            <constraint firstAttribute="bottom" secondItem="yjh-EQ-w8J" secondAttribute="bottom" constant="16" id="Xuu-6C-PEr"/>
+                            <constraint firstItem="y1G-7O-YgD" firstAttribute="leading" secondItem="3h3-t2-Wny" secondAttribute="leading" constant="16" id="fQg-gw-PFe"/>
+                            <constraint firstItem="o3U-8j-jjY" firstAttribute="top" secondItem="3h3-t2-Wny" secondAttribute="top" id="qYe-nP-QAM"/>
+                            <constraint firstItem="o3U-8j-jjY" firstAttribute="leading" secondItem="3h3-t2-Wny" secondAttribute="leading" id="sAG-6Q-aiG"/>
+                            <constraint firstAttribute="trailing" secondItem="yjh-EQ-w8J" secondAttribute="trailing" constant="16" id="vSV-nm-mxl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="3h3-t2-Wny" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2jI-bR-gfc"/>
+                <constraint firstAttribute="bottom" secondItem="3h3-t2-Wny" secondAttribute="bottom" id="GBk-IG-spo"/>
+                <constraint firstItem="3h3-t2-Wny" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QVb-id-RKG"/>
+                <constraint firstAttribute="trailing" secondItem="3h3-t2-Wny" secondAttribute="trailing" id="mxu-yU-YVG"/>
+            </constraints>
+            <size key="customSize" width="195" height="263"/>
+            <connections>
+                <outlet property="imgVw" destination="y1G-7O-YgD" id="uVb-FE-R6s"/>
+                <outlet property="mainVw" destination="3h3-t2-Wny" id="VdK-Xp-Al8"/>
+                <outlet property="playBtn" destination="yjh-EQ-w8J" id="4if-OV-MGI"/>
+            </connections>
+            <point key="canvasLocation" x="191.6030534351145" y="94.718309859154928"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Candy" width="1000" height="1333"/>
+        <image name="ChocolateBar" width="600" height="600"/>
+    </resources>
+</document>

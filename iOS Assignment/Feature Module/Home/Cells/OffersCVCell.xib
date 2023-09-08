@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OffersCVCell" id="gTV-IL-0wX" customClass="OffersCVCell" customModule="iOS_Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6a-gf-hm1">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="167"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cake" translatesAutoresizingMaskIntoConstraints="NO" id="Hq2-aD-HYK">
+                                <rect key="frame" x="25" y="8" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="H5W-er-GCa"/>
+                                    <constraint firstAttribute="width" secondItem="Hq2-aD-HYK" secondAttribute="height" multiplier="1:1" id="ubx-gN-Gvp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chocolate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tO-fy-BKW">
+                                <rect key="frame" x="44.333333333333343" y="116" width="61.666666666666657" height="15.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tyi-EI-hWp">
+                                <rect key="frame" x="64" y="137.66666666666666" width="22.333333333333329" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Tyi-EI-hWp" firstAttribute="centerX" secondItem="M6a-gf-hm1" secondAttribute="centerX" id="A4k-S9-O4G"/>
+                            <constraint firstItem="9tO-fy-BKW" firstAttribute="top" secondItem="Hq2-aD-HYK" secondAttribute="bottom" constant="8" id="L4L-Yo-17S"/>
+                            <constraint firstItem="9tO-fy-BKW" firstAttribute="centerX" secondItem="M6a-gf-hm1" secondAttribute="centerX" id="LWz-dV-rDq"/>
+                            <constraint firstItem="Hq2-aD-HYK" firstAttribute="top" secondItem="M6a-gf-hm1" secondAttribute="top" constant="8" id="XWl-fN-gHn"/>
+                            <constraint firstItem="Hq2-aD-HYK" firstAttribute="centerX" secondItem="M6a-gf-hm1" secondAttribute="centerX" id="adS-8j-fg2"/>
+                            <constraint firstItem="Tyi-EI-hWp" firstAttribute="top" secondItem="9tO-fy-BKW" secondAttribute="bottom" constant="6" id="dcF-gs-1lp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="M6a-gf-hm1" secondAttribute="bottom" id="Geg-im-TsR"/>
+                <constraint firstItem="M6a-gf-hm1" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PmV-2x-4Hs"/>
+                <constraint firstAttribute="trailing" secondItem="M6a-gf-hm1" secondAttribute="trailing" id="dAv-Aw-A85"/>
+                <constraint firstItem="M6a-gf-hm1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="keI-Pv-GXi"/>
+            </constraints>
+            <size key="customSize" width="150" height="167"/>
+            <point key="canvasLocation" x="161.83206106870227" y="39.7887323943662"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Cake" width="1500" height="1500"/>
+    </resources>
+</document>
